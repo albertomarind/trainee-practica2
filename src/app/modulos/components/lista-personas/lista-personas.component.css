@@ -1,0 +1,16 @@
+.persona-inactiva {
+  background-color: rgb(190, 117, 117);
+}
+
+.persona-activa {
+  background-color: rgb(122, 211, 122);
+}
+
+.persona-activa,
+.persona-inactiva {
+  color: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

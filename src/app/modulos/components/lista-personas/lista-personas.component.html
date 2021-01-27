@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>nombre</th>
+      <th>apellido</th>
+      <th>edad</th>
+      <th>acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas;let i = index;">
+      <td>{{persona.id}} <span class="{{persona.activo?'persona-activa':'persona-inactiva'}}"></span></td>
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.apellido}}</td>
+      <td>{{persona.edad}}</td>
+      <td><button *ngIf="persona.activo" class="btn btn-danger" (click)="eliminar(i)">Eliminar</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- [ngClass]="{
+  'persona-inactiva':!persona.activo,
+  'persona-activa':persona.activo
+}"> -->

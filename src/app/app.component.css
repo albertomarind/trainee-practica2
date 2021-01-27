@@ -1,0 +1,16 @@
+.wrapper {
+  border: 1px solid red;
+}
+
+.inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.inline * {
+  margin: 0 .25rem;
+}
+
+.mi-clase {
+  transform: rotate(45deg);
+}
